@@ -1,3 +1,6 @@
+// Adrián Fernández Rodríguez
+// https://github.com/adriferro/ExamenTEMA6-DWECDIW.git
+
 document.addEventListener('DOMContentLoaded', function(){
     iniciarApp();
 });
