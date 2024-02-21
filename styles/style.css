@@ -31,14 +31,19 @@ a:hover{
 }
 
 
+.hero-container{
+    position: relative;
+    margin: 0 auto;
+}
 
 
 .hero-text{
     font-family: 'Protest';
-    color: rgb(0, 0, 0);
-    text-align: center;
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    position: relative;
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
 }
 
 

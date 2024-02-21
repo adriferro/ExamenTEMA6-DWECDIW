@@ -26,7 +26,7 @@ function crearGaleria() {
     }
 }  
 
-/*function mostrarImagen(id) {
+function mostrarImagen(id) {
     const imagen = document.createElement('picture');
     imagen.innerHTML = `
         <source srcset="assets/img/grande/${id}.jpg" type="image/jpg">
