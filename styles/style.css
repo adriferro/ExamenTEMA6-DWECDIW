@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Protest';
+    src: url(/font/ProtestRevolution-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(/font/Ubuntu-Regular.ttf);
+}
+
+.menu{
+    background-color: rgb(196, 196, 196);
+    padding: 10px;
+    text-align: center;
+}
+
+.menu li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu';
+}
+
+a:hover{
+    color: rgb(2, 124, 189);
+}
+
+.hero-text{
+    font-family: 'Protest';
+    position: absolute;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.hero video{
+    z-index: -1;
+}
+
+.hero{
+    text-align: center;
+    align-items: center;
+}
+
+video{
+    width: 100%;
+}
