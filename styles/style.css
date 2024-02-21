@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Protest';
-    src: url(/assets/font/ProtestRevolution-Regular.ttf);
+    src: url(/build/font/ProtestRevolution-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url(/assets/font/Ubuntu-Regular.ttf);
+    src: url(/build/font/Ubuntu-Regular.ttf);
 }
 
 .menu {
