@@ -1,70 +1,178 @@
 @font-face {
     font-family: 'Protest';
-    src: url(/font/ProtestRevolution-Regular.ttf);
+    src: url(/assets/font/ProtestRevolution-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url(/font/Ubuntu-Regular.ttf);
+    src: url(/assets/font/Ubuntu-Regular.ttf);
 }
 
-.menu{
-    background-color: rgb(196, 196, 196);
-    padding: 10px;
+.menu {
+    background-color: #f2f2f2;
+    padding: 20px;
     text-align: center;
 }
 
-.menu li{
+.menu li {
     list-style: none;
     display: inline;
-    padding: 10px;
+    margin: 20px;
 }
 
-a{
+.menu a {
     text-decoration: none;
-    color: black;
+    color: #000;
+    font-size: 20px;
     font-family: 'Ubuntu';
 }
 
-a:hover{
-    color: rgb(2, 124, 189);
+.menu a:hover {
+    color: rgb(0, 114, 185);
 }
 
 
-.hero-container{
-    position: relative;
-    margin: 0 auto;
-}
-
-
-.hero-text{
+.hero-text {
     font-family: 'Protest';
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    position: absolute;
-    z-index: 1;
-    margin: 0 auto;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
 }
 
+.hero-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+}
 
-.hero video{
+.hero video {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-h3{
+
+
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-padding-top: 0rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Pretendo", sans-serif;
+    font-size: 1.6rem;
+}
+
+body.fijar-body {
+    overflow: hidden;
+}
+
+body.body-scroll {
+    padding-top: 8.6rem;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.galeria h3 {
     text-align: center;
     font-family: 'Ubuntu';
+    font-size: 3rem;
 }
 
+.galeria-imagenes {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
 
+@media (min-width: 480px) {
+    .galeria-imagenes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
 
+@media (min-width: 768px) {
+    .galeria-imagenes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
 
-footer{
-    background-color: rgb(0, 155, 238);
+@media (min-width: 992px) {
+    .galeria-imagenes {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay picture {
+    display: block;
+    max-width: 80rem;
+}
+
+.btn-cerrar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #000000;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+}
+
+.btn-cerrar:hover {
+    cursor: pointer;
+}
+
+.site-footer {
+    margin-top: 2rem;
+    background-color: rgb(0, 114, 185);
+    padding: 1rem;
+}
+
+.site-footer p {
     text-align: center;
-    padding: 5px;
-}
-
-footer p{
-    font-family: 'Ubuntu';
+    color: #FFFFFF;
 }
